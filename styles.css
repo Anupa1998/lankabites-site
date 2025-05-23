@@ -61,6 +61,12 @@ nav{
     align-items: center;
 }
 
+.logo-outer .brand-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-outer img{
     width: 48px;
 }
@@ -70,8 +76,15 @@ nav{
     margin-left: 8px;
 }
 
+
 .logo-outer h4 span{
     color: #FDA403;
+}
+
+.logo-outer .menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-container ul{
@@ -108,21 +121,64 @@ nav{
 
 .mobile-link-container{
     display: none;
-    background-color: #FDA403;
+    margin: 0;
+}
+
+.mobile-link-container ul{
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-link-container ul li{
+    list-style: none;
+    margin: 16px 0;
+}
+
+.mobile-link-container ul li a{
+    text-decoration: none;
+    color: #FEFBF6;
+}
+
+.menu-icon{
+    display: none!important;
+    color: #0C0C0C;
 }
 
 
+.icon-style{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: large;
+}
 
 /* mobile responsive navbar */
 @media screen and (max-width: 991px) {
-  .mobile-link-container{
-    display: block;
-  }
   .link-container{
     display: none;
   }
+
+  nav{
+    display: block; 
+    padding: 8px 32px;
+  }
+
+  .logo-outer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-icon{
+    display: block!important;
+  }
+}
+
+#close-icon{
+    display: none;
 }
 /* mobile responsive end */
+
 /* Nav bar styles end */
 
 
